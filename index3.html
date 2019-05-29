@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "title">내가 뭘 눌렀지?</h1>
+    <h2 class = "title">이건가?</h2>
+    <h3 class = "title">요건가?</h3>
+    <h4 class = "title">저건가?</h4>
+    <script>
+        // let h1 = document.querySelector('h1')
+
+        // let button1 =  document.querySelector('.button1')
+        // button1.addEventListener("click", function(){
+        //     button1.innerHTML = '찾았다!'
+        // })
+
+        // let button2 =  document.querySelector('.button2')
+        // button2.addEventListener("click", function(){
+        //     button2.innerHTML = '찾았다!'
+        // })
+
+        // let button3 =  document.querySelector('.button3')
+        // button3.addEventListener("click", function(){
+        //     button3.innerHTML = '찾았다!'
+
+        // })
+        let titles = document.querySelectorAll(".title");
+
+        titles.forEach(function(title) {
+            title.addEventListener("click", function(){
+                title.innerHTML = "찾았다!";
+            });
+        });
+    </script>
+</body>
+</html>

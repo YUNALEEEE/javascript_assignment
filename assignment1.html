@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 글을 입력하세요 </h1>
+    <h1 id="result">_________________________</h1>
+
+    <input type="text" id ="input"/>
+
+    <script>
+        let result = document.querySelector('#result')
+        let input = document.querySelector('#input')
+
+        input.addEventListener('keyup', keyup)
+
+        function keyup(event) {
+            if(event.keyCode == 13){
+                result.textContent = input.value;
+                input.value = "";}
+        }
+    
+        // function keydown(event){
+        //     if(event.keyCode == 13) {
+        //         result.innerHTML = 'Enter 눌렀다';
+        //     }
+        //     else if(event.keyCode == 16) {
+        //         result.innerHTML = 'Shift 눌렀다';
+        //     }
+        //     else if(event.keyCode == 18) {
+        //         result.innerHTML = 'Alt 눌렀다';
+        //     }
+        //     else if(event.keyCode == 17) {
+        //         result.innerHTML = 'Ctrl 눌렀다';
+        //     }
+        //     else {
+        //         result.innerHTML = '이상한거 눌렀다';
+        //     }
+        // }
+
+
+    </script>
+</body>
+</html>

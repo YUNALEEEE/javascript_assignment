@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>여기가 바뀔그야</h1>
+    <h1 id="result">______________________________________</h1>
+    <input type="text" id="input" />
+    <script>
+        let result = document.querySelector('#result')
+        let input = document.querySelector('#input')
+
+        input.addEventListener('keydown', keydown)
+
+        function keydown(event) {
+            console.log(event)
+        }
+       
+    </script>
+</body>
+</html>
