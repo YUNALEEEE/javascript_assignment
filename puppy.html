@@ -19,7 +19,7 @@
 </head>
 <body class = "body">
     <div class="upper">
-        <div class = "title">댕댕이 사진 주세요!</div>
+        <div class = "title">귀여운 댕댕이 나와랏!</div>
         <button id="button" > 멍멍! <i class="fas fa-dog"></i></button>
 
     <div class="heart"><div class="lds-heart"><div></div></div></div>
@@ -31,6 +31,16 @@
     
 
     <script>
+        let title = document.querySelector('.title')
+                setInterval(function random_color() {
+                    var x = Math.floor(Math.random() * 255) + 1;
+                    var y = Math.floor(Math.random() * 255) + 1;
+                    var z = Math.floor(Math.random() * 255) + 1;
+                    var Color = "rgb("+ x + "," + y + "," + z +")";
+                console.log(Color);
+                    title.style.color = Color;
+                }, 500);
+
         $(".heart").hide();
         $("#button").click(function(){
             $(".heart").show();
